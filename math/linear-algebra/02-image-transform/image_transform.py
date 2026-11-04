@@ -33,7 +33,7 @@ def draw_grid(ax, A, lim, step=20, **style):
 def draw_basis(ax, A, length=40):
     """Columns of A = where î and ĵ land"""
     for col, color, label in ((0, "lime", r"$\hat{\imath}$"),
-                              (1, "red", r"$\hat{\jmath}$")):
+                              (1, "blue", r"$\hat{\jmath}$")):
         vx, vy = A[:, col] * length
         ax.annotate("", xy=(vx, vy), xytext=(0, 0), zorder=4,
                     arrowprops=dict(arrowstyle="->", color=color, lw=2.5))
